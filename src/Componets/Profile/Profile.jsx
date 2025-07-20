@@ -47,7 +47,7 @@ setDarkMode(true)
 
         <div className="profile flex items-center justify-center  text-[25px] text-blue-950 mt-4 relative  w-full ">
 
-          <h2>Profile</h2>
+          <h2 className=" dark:text-white " >Profile</h2>
 
 {
   DarkMode?(<CiSun className=" cursor-pointer text-white  absolute right-5 text-3xl " onClick={handelDarkMod} />):(

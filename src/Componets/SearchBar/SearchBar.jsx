@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
-import { UserData } from '../../../../MockData/UserData';
+import { UserData } from "../../../MockData/UserData.js"
 
 function SearchBar() {
   const [InputValue, setInputValue] = useState("");
 
-  // ✅ Correct filter logic with trim()
+
   const filterData = UserData.filter(item =>
     item.title.toLowerCase().includes(InputValue.toLowerCase().trim())
   );

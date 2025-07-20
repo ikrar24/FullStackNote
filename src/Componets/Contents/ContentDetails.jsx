@@ -1,5 +1,5 @@
 import React, { useState , useEffect,useRef } from "react";
-import { UserData } from "../../../../MockData/UserData"; 
+import { UserData } from "../../../MockData/UserData.js"
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaBars  } from "react-icons/fa";
