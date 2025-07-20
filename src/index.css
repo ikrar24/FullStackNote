@@ -1,0 +1,48 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li{
+    list-style: none;
+}
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  scrollbar-width: none;         
+  -ms-overflow-style: none;      
+}
+
+body::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari */
+}
+
+
+.attechement{
+  overflow: auto;
+}
+
+.attechement::-webkit-scrollbar{
+  display: none;
+}
+
+
+.content{
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+
+
+.content::-webkit-scrollbar{
+  display: none;
+}
+
+
