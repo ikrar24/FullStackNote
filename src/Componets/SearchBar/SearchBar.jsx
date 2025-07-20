@@ -35,7 +35,7 @@ function SearchBar() {
 
 <img src={userData.image} className=" z-0 w-full h-full  block object-cover " alt="image" />
 
-                    <p className="text-2xl text-red-700 absolute top-0 left-2 ">{userData.title}</p>
+                    <p className="text-2xl backdrop-blur-sm text-white font-bold p-1 w-full  absolute top-0  ">{userData.title}</p>
 
                     <p className="text-md absolute top-9 left-2 ">{userData.time}</p>
 
@@ -44,7 +44,17 @@ function SearchBar() {
 
 
                 )) : (
-                  <p className="text-white text-xl mt-10">No Results Found</p>
+                 <div className=" flex items-center justify-center w-screen h-screen flex-col " >
+                  <img
+  src="https://media.giphy.com/media/UoeaPqYrimha6rdTFV/giphy.gif"
+
+  loading="lazy" 
+
+  alt="404 Not Found"
+/>
+<h2 style={{ textAlign: 'center' }}>Oops! Page Not Found</h2>
+
+                 </div>
                 )
               }
             </section>

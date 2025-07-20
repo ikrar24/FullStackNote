@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link } from "react-router-dom";
 import { UserData } from "../../../MockData/UserData.js"
+import FirstNoteImg from "../../assets/FirstNoteImg.png"
 
+
+ 
 
 function Contents() {
   const [Data, setData] = useState([]);
@@ -35,7 +38,7 @@ function Contents() {
 
 <img src={userData.image} className=" z-0 w-full h-full  block object-cover " alt="image"  />
 
-                    <p className="text-2xl text-red-700 absolute top-0 left-2 ">{userData.title}</p>
+                    <p className="text-2xl backdrop-blur-sm text-white p-1 font-bold w-full absolute top-0  ">{userData.title}</p>
 
                     <p className="text-md absolute top-9 left-2 ">{userData.time}</p>
 
@@ -44,7 +47,12 @@ function Contents() {
 
 
                 )) : (
-                  <p className="text-white text-xl mt-10">No Results Found</p>
+                  <div className=" flex items-center justify-center w-screen h-screen   " >
+<Link to="/create" className="  w-auto  flex items-center justify-center  " >
+<img src={FirstNoteImg} alt="image" loading="lazy" className=" w-[50%] h-[50%] " />
+</Link>
+                    
+                  </div>
                 )
               }
             </section>
